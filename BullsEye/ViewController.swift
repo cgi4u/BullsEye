@@ -67,12 +67,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startOver(){
-        round = 1
-        score = 0
-        currentVal = 50
-        slider.value = Float(currentVal)
-        targetValue = 1 + Int(arc4random_uniform(100))
+        startNewGame()
         updateLabels()
+    }
+    
+    func startNewGame(){
+        round = 0
+        score = 0
+        startNewRound()
     }
     
     func startNewRound(){
