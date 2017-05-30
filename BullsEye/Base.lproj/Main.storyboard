@@ -69,19 +69,20 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXs-wZ-dRJ">
-                                <rect key="frame" x="111" y="275" width="71" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXs-wZ-dRJ">
+                                <rect key="frame" x="111" y="275" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start Over"/>
+                                <state key="normal" image="StartOverIcon" backgroundImage="SmallButton"/>
                                 <connections>
                                     <action selector="startOver" destination="BYZ-38-t0r" eventType="touchUpInside" id="nnN-SA-abc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVp-qB-aig">
-                                <rect key="frame" x="564" y="279" width="22" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVp-qB-aig">
+                                <rect key="frame" x="564" y="279" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="InfoButton" backgroundImage="SmallButton"/>
                                 <connections>
-                                    <segue destination="aFr-3R-pTT" kind="presentation" modalTransitionStyle="flipHorizontal" id="mq1-vs-T7f"/>
+                                    <segue destination="aFr-3R-pTT" kind="presentation" id="q8p-Rv-okh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RR-5C-cmK">
@@ -208,5 +209,8 @@
         <image name="Background" width="568" height="320"/>
         <image name="Button-Highlighted" width="100" height="37"/>
         <image name="Button-Normal" width="100" height="37"/>
+        <image name="InfoButton" width="10" height="22"/>
+        <image name="SmallButton" width="32" height="32"/>
+        <image name="StartOverIcon" width="20" height="20"/>
     </resources>
 </document>
